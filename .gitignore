@@ -1,0 +1,8 @@
+*.xlsx
+*bello*
+data_millikan.dat
+*.o
+millikan
+*.aux
+*.log
+Millikan_2024-2025.pdf

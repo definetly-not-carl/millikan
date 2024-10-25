@@ -1,0 +1,990 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{comment}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{multicol}
+\setlength{\columnsep}{0.75cm}
+\RequirePackage[a4paper,margin=1.5cm]{geometry}
+
+
+\title{{\large Università degli Studi di Milano}\\{\large Corso di Laurea Triennale in Fisica}\\{\LARGE Esperienza di Millikan}\\{\normalsize Misura della carica dell'elettrone}}
+\author{Carlo Moroni, Enco Musa, Matteo Pasolini\\{Turno: LU4}}
+\date{October 14, 2024}
+
+\begin{document}
+	
+\maketitle
+\hrule
+\begin{abstract}
+	\begin{center}
+		{\Large Millikan}
+	\end{center}
+\end{abstract}
+\hrule
+
+\section{Introduzione e modalità}
+
+\section{Esposizione dei risultati}
+
+Alcuni valori delle gocce sono stati misurati o calcolati una sola volta e, ove possibile, lasciati invariati per tutta la misurazione della goccia stessa. Per la resistenza, misurata con l'ohmetro, è stato preso come sigma $\pm1$ sull'ultima cifra significativa (si stavano misurando i $M\Omega$, quindi si parla di $\pm1\ k\Omega$), in quanto il valore era molto costante e poco soggetto a fluttuazioni.
+
+Per la temperatura, ottenuta con l'apposita tabella di conversione da $M\Omega$ a $^\circ C$, si è tenuta un'incertezza di $\pm1\ ^\circ C$ in quanto, era la minima quantità apprezzabile con la tabella, oltre al fatto che i dati della resistenza ottenuti, molto spesso, non combaciano perfettamente con il valore tabulato, quindi abbiamo approssimato al valore più prossimo.
+
+Anche i valori del voltaggio fornito al sistema, non venivano cambiati durante la raccolta dati per una goccia, inoltre, l'incertezza tenuta per questa misura è stata scelta di $\pm2\ V$ in quanto il generatore di tensione fluttuava leggermente tra diversi valori e se ne è presa una media, tenendo conto dell'escursione massima.
+
+Nella prima tabella di ogni goccia vengono anche riportati differenza di potenziale e campo elettrico. Essi sono di valore postivo in quanto, per ottenere il valore per il capmo elettrico negativo, bisogna semplicemtente moltiplicare questi valori per $-1$.
+
+\subsection{Goccia 1}
+\begin{multicols}{2}
+	
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c |}
+		\hline
+		Resistenza [$M\Omega$] & $2.058$ \\
+		\hline
+		Temperatura [$^\circ C$] & $24$ \\
+		\hline
+		$\eta$ [$\frac{Ns}{m^2}$] & $1.843E-05$\\
+		\hline
+		$\eta_{eff}$ [$\frac{Ns}{m^2}$] & $1.473E-05$\\
+		\hline
+		$\Delta V$ [$V$] & $348$ \\
+		\hline
+		$E$ [$\frac N C$] & $46072$\\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei valori costanti all'interno della misurazione}
+	\label{}
+\end{table}
+
+\columnbreak
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $r$ [$m$] \\
+		\hline
+		$46.4$ & $1.078E-05$ & $2.878E-07$ \\
+		$46.2$ & $1.083E-05$ & $2.886E-07$ \\
+		$45.8$ & $1.092E-05$ & $2.900E-07$ \\
+		$29.1$ & $1.720E-05$ & $3.731E-07$ \\
+		$29.0$ & $1.725E-05$ & $3.738E-07$ \\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e raggi, misurati in assenza di campo elettrico}
+	\label{}
+\end{table}
+
+\end{multicols}
+
+\begin{multicols}{2}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $Q$ [$C$] \\
+		\hline
+		$2.0$ & $2.53E-04$ & $4.59E-19$ \\
+		$1.5$ & $3.33E-04$ & $6.14E-19$ \\
+		$1.8$ & $2.75E-04$ & $5.02E-19$ \\
+		$1.7$ & $2.98E-04$ & $5.46E-19$ \\
+		$2.1$ & $2.42E-04$ & $4.38E-19$ \\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e cariche, misurati in presenza di campo elettrico positivo}
+	\label{}
+\end{table}
+
+\columnbreak
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $Q$ [$C$] \\
+		\hline
+		$2.0$ & $2.50E-04$ & $5.06E-19$ \\
+		$2.1$ & $2.40E-04$ & $4.87E-19$ \\
+		$2.0$ & $2.46E-04$ & $4.99E-19$ \\
+		$2.2$ & $2.29E-04$ & $4.66E-19$ \\
+		$2.3$ & $2.22E-04$ & $4.52E-19$ \\
+		\hline		
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e cariche, misurati in presenza di campo elettrico negativo}
+	\label{}
+\end{table}
+	
+\end{multicols}
+
+\subsection{Goccia 2}
+
+\begin{multicols}{2}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c |}
+		\hline
+		Resistenza [$M\Omega$] & $2.060$\\
+		\hline
+		Temperatura [$^\circ C$] & $24$\\
+		\hline
+		$\eta$ [$\frac{Ns}{m^2}$] & $1.843E-05$\\
+		\hline
+		$\eta_{eff}$ [$\frac{Ns}{m^2}$] & $1.494E-05$\\
+		\hline
+		$\Delta V$ [$V$] & $404$\\
+		\hline
+		$E$ [$\frac N C$] & $53486$\\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei valori costanti all'interno della misurazione}
+	\label{}
+\end{table}
+
+\columnbreak
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $r$ [$m$] \\
+		\hline
+		$35.0$ & $1.429E-05$ & $3.369E-07$ \\
+		$36.4$ & $1.375E-05$ & $3.297E-07$ \\
+		$29.5$ & $1.698E-05$ & $3.705E-07$ \\
+		$32.3$ & $1.548E-05$ & $3.521E-07$ \\
+		$33.6$ & $1.489E-05$ & $3.446E-07$ \\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e raggi, misurati in assenza di campo elettrico}
+	\label{}
+\end{table}
+	
+\end{multicols}
+
+\begin{multicols}{2}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $Q$ [$C$] \\
+		\hline
+		$0.8$ & $6.17E-04$ & $1.10E-18$ \\
+		$0.9$ & $5.81E-04$ & $1.03E-18$ \\
+		$0.9$ & $5.88E-04$ & $1.05E-18$ \\
+		$0.9$ & $5.56E-04$ & $9.86E-19$ \\
+		$0.9$ & $5.81E-04$ & $1.03E-18$ \\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e cariche, misurati in presenza di campo elettrico positivo}
+	\label{}
+\end{table}
+
+\columnbreak
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $Q$ [$C$] \\
+		\hline
+		$1.0$ & $5.00E-04$ & $9.39E-19$ \\
+		$1.0$ & $4.95E-04$ & $9.30E-19$ \\
+		$0.9$ & $5.81E-04$ & $1.09E-18$ \\
+		$0.9$ & $5.68E-04$ & $1.06E-18$ \\
+		$0.9$ & $5.81E-04$ & $1.09E-18$ \\
+		\hline		
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e cariche, misurati in presenza di campo elettrico negativo}
+	\label{}
+\end{table}
+	
+\end{multicols}
+
+\subsection{Goccia 3}
+
+\begin{multicols}{2}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c |}
+		\hline
+		Resistenza [$M\Omega$] & $2.058$\\
+		\hline
+		Temperatura [$^\circ C$] & $24$\\
+		\hline
+		$\eta$ [$\frac{Ns}{m^2}$] & $1.843E-05$\\
+		\hline
+		$\eta_{eff}$ [$\frac{Ns}{m^2}$] & $1.499E-05$\\
+		\hline
+		$\Delta V$ [$V$] & $306$\\
+		\hline
+		$E$ [$\frac N C$] & $40512$\\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei valori costanti all'interno della misurazione}
+	\label{}
+\end{table}
+
+\columnbreak
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $r$ [$m$] \\
+		\hline
+		$37.1$ & $1.348E-05$ & $3.262E-07$ \\
+		$33.5$ & $1.493E-05$ & $3.451E-07$ \\
+		$27.5$ & $1.817E-05$ & $3.845E-07$ \\
+		$37.5$ & $1.334E-05$ & $3.243E-07$ \\
+		$28.0$ & $1.789E-05$ & $3.812E-07$ \\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e raggi, misurati in assenza di campo elettrico}
+	\label{}
+\end{table}
+	
+\end{multicols}
+
+\begin{multicols}{2}
+
+Le misurazioni di questa goccia in presenza di campo elettrico positivo non è stato possibile prenderle in quanto la goccia stessa, dopo aver concluso la misurazione per il campo elettrico negativo, è scomparsa dal piano di osservazione, si suppone che abbia interagito con altre gocce presenti.
+
+\columnbreak
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $Q$ [$C$] \\
+		\hline
+		$5.1$ & $9.84E-05$ & $2.79E-19$ \\
+		$4.6$ & $1.09E-04$ & $3.06E-19$ \\
+		$4.6$ & $1.08E-04$ & $3.02E-19$ \\
+		$4.5$ & $1.12E-04$ & $3.11E-19$ \\
+		$3.6$ & $1.39E-04$ & $3.78E-19$ \\
+		\hline		
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e cariche, misurati in presenza di campo elettrico negativo}
+	\label{}
+\end{table}
+	
+\end{multicols}
+
+\subsection{Goccia 4}
+
+\begin{multicols}{2}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c | c | c | c |}
+		\hline
+		Resistenza [$M\Omega$] & $2.023$\\
+		\hline
+		Temperatura [$^\circ C$]& $24$\\
+		\hline
+		$\eta$ [$\frac{Ns}{m^2}$] & $1.843E-05$\\
+		\hline
+		$\eta_{eff}$ [$\frac{Ns}{m^2}$] & $1.589E-05$\\
+		\hline
+		$\Delta V$ [$V$] & $340$\\
+		\hline
+		$E$ [$\frac N C$] & $45013$\\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei valori costanti all'interno della misurazione}
+	\label{}
+\end{table}
+
+\columnbreak
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $r$ [$m$] \\
+		\hline
+		$17.0$ & $2.948E-05$ & $4.999E-07$ \\
+		$16.5$ & $3.023E-05$ & $5.067E-07$ \\
+		$18.4$ & $2.720E-05$ & $4.787E-07$ \\
+		$16.2$ & $3.092E-05$ & $5.129E-07$ \\
+		$15.1$ & $3.311E-05$ & $5.321E-07$ \\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e raggi, misurati in assenza di campo elettrico}
+	\label{}
+\end{table}
+	
+\end{multicols}
+
+\begin{multicols}{2}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $Q$ [$C$] \\
+		\hline
+		$3.7$ & $1.35E-04$ & $3.52E-19$ \\
+		$4.0$ & $1.25E-04$ & $3.20E-19$ \\
+		$3.9$ & $1.28E-04$ & $3.27E-19$ \\
+		$3.6$ & $1.41E-04$ & $3.72E-19$ \\
+		$4.1$ & $1.23E-04$ & $3.14E-19$ \\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e cariche, misurati in presenza di campo elettrico positivo}
+	\label{}
+\end{table}
+
+\columnbreak
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $Q$ [$C$] \\
+		\hline
+		$7.3$ & $6.84E-05$ & $3.32E-19$ \\
+		$7.3$ & $6.89E-05$ & $3.33E-19$ \\
+		$7.1$ & $7.06E-05$ & $3.39E-19$ \\
+		$7.2$ & $6.96E-05$ & $3.36E-19$ \\
+		$7.2$ & $6.98E-05$ & $3.36E-19$ \\
+		\hline		
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e cariche, misurati in presenza di campo elettrico negativo}
+	\label{}
+\end{table}
+	
+\end{multicols}
+
+
+\subsection{Goccia 5}
+
+\begin{multicols}{2}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c | c | c | c |}
+		\hline
+		Resistenza [$M\Omega$] & $2.024$\\
+		\hline
+		Temperatura [$^\circ C$]& $24$\\
+		\hline
+		$\eta$ [$\frac{Ns}{m^2}$] & $1.843E-05$\\
+		\hline
+		$\eta_{eff}$ [$\frac{Ns}{m^2}$] & $1.624E-05$\\
+		\hline
+		$\Delta V$ [$V$] & $410$\\
+		\hline
+		$E$ [$\frac N C$] & $54281$\\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei valori costanti all'interno della misurazione}
+	\label{}
+\end{table}
+
+\columnbreak
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $r$ [$m$] \\
+		\hline
+		$12.6$ & $3.978E-05$ & $5.868E-07$ \\
+		$11.9$ & $4.205E-05$ & $6.044E-07$ \\
+		$12.2$ & $4.085E-05$ & $5.951E-07$ \\
+		$11.9$ & $4.216E-05$ & $6.052E-07$ \\
+		$11.4$ & $4.378E-05$ & $6.175E-07$ \\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e raggi, misurati in assenza di campo elettrico}
+	\label{}
+\end{table}
+	
+\end{multicols}
+
+\begin{multicols}{2}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $Q$ [$C$] \\
+		\hline
+		$1.2$ & $4.17E-04$ & $1.27E-18$ \\
+		$1.8$ & $2.86E-04$ & $8.28E-19$ \\
+		$1.7$ & $2.91E-04$ & $8.45E-19$ \\
+		$1.6$ & $3.13E-04$ & $9.19E-19$ \\
+		$1.7$ & $3.03E-04$ & $8.87E-19$ \\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e cariche, misurati in presenza di campo elettrico positivo}
+	\label{}
+\end{table}
+
+\columnbreak
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $Q$ [$C$] \\
+		\hline
+		$2.1$ & $2.44E-04$ & $9.69E-19$ \\
+		$2.4$ & $2.07E-04$ & $8.43E-19$ \\
+		$2.1$ & $2.40E-04$ & $9.57E-19$ \\
+		$2.7$ & $1.89E-04$ & $7.82E-19$ \\
+		$2.4$ & $2.08E-04$ & $8.49E-19$ \\
+		\hline		
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e cariche, misurati in presenza di campo elettrico negativo}
+	\label{}
+\end{table}
+	
+\end{multicols}
+
+\subsection{Goccia 6}
+
+\begin{multicols}{2}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c | c | c | c |}
+		\hline
+		Resistenza [$M\Omega$] & $2.028$\\
+		\hline
+		Temperatura [$^\circ C$]& $24$\\
+		\hline
+		$\eta$ [$\frac{Ns}{m^2}$] & $1.843E-05$\\
+		\hline
+		$\eta_{eff}$ [$\frac{Ns}{m^2}$] & $1.676E-05$\\
+		\hline
+		$\Delta V$ [$V$] & $380$\\
+		\hline
+		$E$ [$\frac N C$] & $50309$\\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei valori costanti all'interno della misurazione}
+	\label{}
+\end{table}
+
+\columnbreak
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $r$ [$m$] \\
+		\hline
+		$6.8$ & $7.386E-05$ & $8.134E-07$ \\
+		$7.2$ & $6.983E-05$ & $7.899E-07$ \\
+		$6.5$ & $7.692E-05$ & $8.309E-07$ \\
+		$6.3$ & $7.937E-05$ & $8.446E-07$ \\
+		$7.2$ & $6.983E-05$ & $7.899E-07$ \\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e raggi, misurati in assenza di campo elettrico}
+	\label{}
+\end{table}
+	
+\end{multicols}
+
+\begin{multicols}{2}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $Q$ [$C$] \\
+		\hline
+		$1.4$ & $3.50E-04$ & $1.41E-18$ \\
+		$1.5$ & $3.38E-04$ & $1.35E-18$ \\
+		$1.7$ & $2.98E-04$ & $1.14E-18$ \\
+		$1.7$ & $2.98E-04$ & $1.14E-18$ \\
+		$1.5$ & $3.42E-04$ & $1.37E-18$ \\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e cariche, misurati in presenza di campo elettrico positivo}
+	\label{}
+\end{table}
+
+\columnbreak
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $Q$ [$C$] \\
+		\hline
+		$3.3$ & $1.50E-04$ & $1.14E-18$ \\
+		$3.3$ & $1.53E-04$ & $1.16E-18$ \\
+		$2.9$ & $1.74E-04$ & $1.27E-18$ \\
+		$3.4$ & $1.49E-04$ & $1.14E-18$ \\
+		$2.7$ & $1.87E-04$ & $1.33E-18$ \\
+		\hline		
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e cariche, misurati in presenza di campo elettrico negativo}
+	\label{}
+\end{table}
+	
+\end{multicols}
+
+\subsection{Goccia 7}
+
+\begin{multicols}{2}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c | c | c | c |}
+		\hline
+		Resistenza [$M\Omega$] & $2.028$\\
+		\hline
+		Temperatura [$^\circ C$]& $24$\\
+		\hline
+		$\eta$ [$\frac{Ns}{m^2}$] & $1.843E-05$\\
+		\hline
+		$\eta_{eff}$ [$\frac{Ns}{m^2}$] & $1.672E-05$\\
+		\hline
+		$\Delta V$ [$V$] & $380$\\
+		\hline
+		$E$ [$\frac N C$] & $50309$\\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei valori costanti all'interno della misurazione}
+	\label{}
+\end{table}
+
+\columnbreak
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $r$ [$m$] \\
+		\hline
+		$7.6$ & $6.579E-05$ & $7.655E-07$ \\
+		$7.2$ & $6.944E-05$ & $7.876E-07$ \\
+		$7.2$ & $6.954E-05$ & $7.881E-07$ \\
+		$6.6$ & $7.610E-05$ & $8.263E-07$ \\
+		$7.0$ & $7.184E-05$ & $8.017E-07$ \\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e raggi, misurati in assenza di campo elettrico}
+	\label{}
+\end{table}
+	
+\end{multicols}
+
+\begin{multicols}{2}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $Q$ [$C$] \\
+		\hline
+		$1.3$ & $3.85E-04$ & $1.56E-18$ \\
+		$1.6$ & $3.07E-04$ & $1.17E-18$ \\
+		$1.6$ & $3.23E-04$ & $1.25E-18$ \\
+		$1.6$ & $3.13E-04$ & $1.20E-18$ \\
+		$1.5$ & $3.38E-04$ & $1.33E-18$ \\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e cariche, misurati in presenza di campo elettrico positivo}
+	\label{}
+\end{table}
+
+\columnbreak
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $Q$ [$C$] \\
+		\hline
+		$2.7$ & $1.87E-04$ & $1.28E-18$ \\
+		$2.9$ & $1.74E-04$ & $1.22E-18$ \\
+		$2.5$ & $2.02E-04$ & $1.35E-18$ \\
+		$2.8$ & $1.79E-04$ & $1.24E-18$ \\
+		$2.5$ & $2.04E-04$ & $1.37E-18$ \\
+		\hline		
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e cariche, misurati in presenza di campo elettrico negativo}
+	\label{}
+\end{table}
+	
+\end{multicols}
+
+
+\subsection{Goccia 8}
+
+\begin{multicols}{2}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c | c | c | c |}
+		\hline
+		Resistenza [$M\Omega$] & $2.029$\\
+		\hline
+		Temperatura [$^\circ C$]& $24$\\
+		\hline
+		$\eta$ [$\frac{Ns}{m^2}$] & $1.843E-05$\\
+		\hline
+		$\eta_{eff}$ [$\frac{Ns}{m^2}$] & $1.633E-05$\\
+		\hline
+		$\Delta V$ [$V$] & $410$\\
+		\hline
+		$E$ [$\frac N C$] & $54281$\\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei valori costanti all'interno della misurazione}
+	\label{}
+\end{table}
+
+\columnbreak
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $r$ [$m$] \\
+		\hline
+		$11.4$ & $4.390E-05$ & $6.183E-07$ \\
+		$11.7$ & $4.292E-05$ & $6.110E-07$ \\
+		$10.7$ & $4.686E-05$ & $6.401E-07$ \\
+		$9.5$ & $5.258E-05$ & $6.803E-07$ \\
+		$12.0$ & $4.156E-05$ & $6.006E-07$ \\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e raggi, misurati in assenza di campo elettrico}
+	\label{}
+\end{table}
+	
+\end{multicols}
+
+\begin{multicols}{2}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $Q$ [$C$] \\
+		\hline
+		$0.9$ & $4.95E-04$ & $1.60E-18$ \\
+		$0.8$ & $4.95E-04$ & $1.60E-18$ \\
+		$0.8$ & $4.95E-04$ & $1.60E-18$ \\
+		$0.9$ & $4.95E-04$ & $1.60E-18$ \\
+		$0.8$ & $4.95E-04$ & $1.60E-18$ \\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e cariche, misurati in presenza di campo elettrico positivo}
+	\label{}
+\end{table}
+
+\columnbreak
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $Q$ [$C$] \\
+		\hline
+		$1.0$ & $4.95E-04$ & $1.93E-18$ \\
+		$1.0$ & $4.95E-04$ & $1.93E-18$ \\
+		$1.0$ & $4.95E-04$ & $1.93E-18$ \\
+		$1.0$ & $4.95E-04$ & $1.93E-18$ \\
+		$1.0$ & $4.95E-04$ & $1.93E-18$ \\
+		\hline		
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e cariche, misurati in presenza di campo elettrico negativo}
+	\label{}
+\end{table}
+	
+\end{multicols}
+
+\subsection{Goccia 9}
+
+\begin{multicols}{2}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c | c | c | c |}
+		\hline
+		Resistenza [$M\Omega$] & $2.025$\\
+		\hline
+		Temperatura [$^\circ C$]& $24$\\
+		\hline
+		$\eta$ [$\frac{Ns}{m^2}$] & $1.843E-05$\\
+		\hline
+		$\eta_{eff}$ [$\frac{Ns}{m^2}$] & $1.609E-05$\\
+		\hline
+		$\Delta V$ [$V$] & $306$\\
+		\hline
+		$E$ [$\frac N C$] & $40512$\\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei valori costanti all'interno della misurazione}
+	\label{}
+\end{table}
+
+\columnbreak
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $r$ [$m$] \\
+		\hline
+		$16.8$ & $2.971E-05$ & $5.020E-07$ \\
+		$12.9$ & $3.891E-05$ & $5.799E-07$ \\
+		$13.9$ & $3.597E-05$ & $5.561E-07$ \\
+		$13.0$ & $3.849E-05$ & $5.766E-07$ \\
+		$13.3$ & $3.754E-05$ & $5.689E-07$ \\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e raggi, misurati in assenza di campo elettrico}
+	\label{}
+\end{table}
+	
+\end{multicols}
+
+\begin{multicols}{2}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $Q$ [$C$] \\
+		\hline
+		$4.0$ & $1.24E-04$ & $3.64E-19$ \\
+		$2.5$ & $2.04E-04$ & $6.98E-19$ \\
+		$3.0$ & $1.67E-04$ & $5.43E-19$ \\
+		$3.3$ & $1.52E-04$ & $4.80E-19$ \\
+		$2.6$ & $1.90E-04$ & $6.40E-19$ \\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e cariche, misurati in presenza di campo elettrico positivo}
+	\label{}
+\end{table}
+
+\columnbreak
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $Q$ [$C$] \\
+		\hline
+		$8.8$ & $5.66E-05$ & $3.85E-19$ \\
+		$3.8$ & $1.31E-04$ & $6.96E-19$ \\
+		$5.8$ & $8.64E-05$ & $5.09E-19$ \\
+		$5.3$ & $9.38E-05$ & $5.40E-19$ \\
+		$3.9$ & $1.28E-04$ & $6.83E-19$ \\
+		\hline		
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e cariche, misurati in presenza di campo elettrico negativo}
+	\label{}
+\end{table}
+	
+\end{multicols}
+
+\subsection{Goccia 10}
+\begin{multicols}{2}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c | c | c | c |}
+		\hline
+		Resistenza [$M\Omega$] & $2.028$\\
+		\hline
+		Temperatura [$^\circ C$]& $24$\\
+		\hline
+		$\eta$ [$\frac{Ns}{m^2}$] & $1.843E-05$\\
+		\hline
+		$\eta_{eff}$ [$\frac{Ns}{m^2}$] & $1.661E-05$\\
+		\hline
+		$\Delta V$ [$V$] & $410$\\
+		\hline
+		$E$ [$\frac N C$] & $54281$\\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei valori costanti all'interno della misurazione}
+	\label{}
+\end{table}
+
+\columnbreak
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $r$ [$m$] \\
+		\hline
+		$8.7$ & $5.760E-05$ & $7.139E-07$ \\
+		$8.5$ & $5.896E-05$ & $7.227E-07$ \\
+		$7.7$ & $6.468E-05$ & $7.587E-07$ \\
+		$7.5$ & $6.693E-05$ & $7.725E-07$ \\
+		$8.5$ & $5.910E-05$ & $7.236E-07$ \\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e raggi, misurati in assenza di campo elettrico}
+	\label{}
+\end{table}
+	
+\end{multicols}
+
+\begin{multicols}{2}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $Q$ [$C$] \\
+		\hline
+		$2.1$ & $2.36E-04$ & $7.42E-19$ \\
+		$1.9$ & $2.70E-04$ & $8.88E-19$ \\
+		$2.1$ & $2.42E-04$ & $7.66E-19$ \\
+		$1.7$ & $2.92E-04$ & $9.82E-19$ \\
+		$2.1$ & $2.40E-04$ & $7.61E-19$ \\
+		\hline
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e cariche, misurati in presenza di campo elettrico positivo}
+	\label{}
+\end{table}
+
+\columnbreak
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$\Delta t$ [$s$] & $v$ [$\frac ms$] & $Q$ [$C$] \\
+		\hline
+		$4.1$ & $1.23E-04$ & $7.84E-19$ \\
+		$3.9$ & $1.29E-04$ & $8.11E-19$ \\
+		$3.9$ & $1.27E-04$ & $8.03E-19$ \\
+		$3.8$ & $1.32E-04$ & $8.21E-19$ \\
+		$3.9$ & $1.28E-04$ & $8.07E-19$ \\
+		\hline		
+	\end{tabular}
+	\caption{Tabella dei tempi, velocità e cariche, misurati in presenza di campo elettrico negativo}
+	\label{}
+\end{table}
+	
+\end{multicols}
+
+\section{Analisi dei dati}
+
+\section{Elaborazione dei dati}
+Durante l'esperienza, si raccoglievano i dati di tempo, resistenza interna al sistema e differenza di potenziale generata. Tutti i dati ottenuti derivano da queste variabili e diverse costanti già conosciute a priori.
+
+Uno dei primi dati ricavati è stata la velocità, che si ottiene dalla formula:
+\begin{equation}
+	v=\frac{\Delta z}{\Delta t}
+	\label{velocita_limite}
+\end{equation}
+Dove $\Delta z$ è una costante ($0.5\cdot10^{-3}\ m$) ed è la distanza tra due linee spesse del reticolo visualizzato col microscopio, mentre $\Delta t$ è l'intervallo di tempo che la goccia ha impiegato per percorrere un $\Delta z$.
+
+Per ottenere la relativa incertezza, è bastato compiere la derivata parziale della velocità lungo l'intervallo di tempo ($\frac{\partial v}{\partial \Delta t}=-\frac{\Delta z}{(\Delta t)^2}$) per poi utilizzarla\footnote{Nella formula della $\sigma_v$ è stata usata una formula leggermente diversa, ma equivalente, in quanto si è preferito ricondursi alla velocità, anziché utilizzare il $\Delta z$} nella propagazione degli errori:
+\begin{equation}
+	\sigma_v=v\sqrt{\left(-\frac{\sigma_{\Delta t}}{\Delta t}\right)^2}
+	\label{sigma_v}
+\end{equation}
+Dove $\sigma_{\Delta t}$ è l'incertezza sui tempi, stimata di $\pm0.1\ s$, dato che era dovuta ai tempi di reazione per comunicare la partenza della goccia e la ricezione da parte dell'altra persona e la conseguente presa del tempo.\\
+
+Grazie alla resistenza ed ai valori tabulati, è stato possibile ottenere facilmente la temperatura, la cui $\sigma$ è stata presa di $\pm1\ ^\circ C$ in quanto la tabella lasciava apprezzare quelle variazioni di temperatura. Si noti che i valori della resistenza non sono perfetti con quelli della tabella, ma si è deciso di approssimare alla temperatura più prossima, che, con l'incertezza in esame, è una buona approssimazione.
+
+Dalla temperatura è stato ricavato il valore di $\eta$, coefficiente di viscosità dell'aria, per mezzo della formula:
+\begin{equation}
+	\eta=[1.800+(T-15)\cdot 4.765\cdot 10^{-3}]\cdot 10^{-5}
+	\label{eta}
+\end{equation}
+Dove l'unica variabile è $T$ della temperatura e tutte le altre sono costanti.
+
+Ne è risultato semplice calcolarne la $\sigma$ in quanto vi è una sola dipendeza dal valore della temperatura e, facendo la propagazoine degli errori, è possibile ottenere la seguente:
+\begin{equation}
+	\sigma_{\eta}=4.765\cdot\sigma_T\cdot 10^{-8}
+	\label{sigma_eta}
+\end{equation}
+Dove $\sigma_T$ è l'incertezza della temperatura.\\
+
+Dalla velocità e dal coefficiente di viscosità, è stato possibile calcolare il raggio della goccia per mezzo della relazione:
+\begin{equation}
+	r=\sqrt{\left(\frac{b}{2p}\right)+\frac{9\eta v_o}{2g(\rho_o-\rho_a)}}-\frac b{2p}
+	\label{raggio}
+\end{equation}
+Dove $b$ è la costante di correzione di viscosità, $p$ la pressione atmosferica, $g$ l'accelerazione di gravità a Milano, $\rho_o$ la densità dell'olio, $\rho_a$ la densità dell'aria, mentre $v$ e $\eta$ sono i due valori ottenuti con le relazioni (\ref{velocita_limite}) e (\ref{eta}).
+
+L'incertezza sui raggi è stata calcolata derivando parzialmente lungo le uniche due variabili all'interno dell'equazione che sono $v_o$ e $\eta$. Le due derivate sono state ricondotte alla formula per il raggio al fine di semplificare la notazione.
+\begin{equation}
+	\sigma_r=\sqrt{\left(\frac12\frac{9v/[2g(\rho_o-\rho_a)]}{r+\frac b{2p}}\sigma_{\eta}\right)^2+\left(\frac12\frac{9\eta/[2g(\rho_o-\rho_a)]}{r+\frac b{2p}}\sigma_v\right)^2}
+\end{equation}
+Dove $\sigma_{\eta}$ è l'incertezza del coefficiente di viscosità ricavato con la relazione (\ref{sigma_eta}) e $\sigma_v$ è l'incertezza della velocità ricavato con la formula (\ref{sigma_v}).\\
+
+Siccome la goccia in esame era una sola e non può avere più raggi e più velocità limite, sono stati, pertanto, presi i valori medi tra i raggi e tra le velocità. Pur avendo a disposizione sia le incertezze per le velocità che quelle per i raggi, si è deciso di non compiere una media pesata in quanto tempi\footnote{Si sta parlando di tempi in quanto sia le velocità che i raggi dipendono da essi, o meglio, le velocità dipendono direttamente dai tempi e i raggi dipendono direttamente dalle velocità quindi, per transitività, anch'essi dipendono dai tempi} maggiori conducono a incertezze minori e, di conseguenza, pesi maggiori, facendo quindi propendere la media pesata verso questi valori.
+
+Siccome non è stato possibile stabilire se tempi maggiori siano necessariamente valori migliori, si è deciso di condurre una media semplice tra i valori delle velocità e dei raggi, prendendo come incertezza una deviazione standard sul campione e dividendo per la radice del numero di elementi.\\
+
+Per ottenere i valori dei raggi per ogni intervallo di tempo, in realtà, è stato utilizzato anche un valore efficace per il coefficiente di viscosità dell'aria $\eta_{eff}$ calcolato con la seguente formula:
+\begin{equation}
+	\eta_{eff}=\frac{\eta}{1+\frac b{pr}}
+\end{equation}
+Dove $\eta$ è il coefficiente di viscosità dell'aria, $p$ la pressione atmosferica, $b$ il fattore di correzione di viscosità e $r$ è il raggio medio. Per ricavare i valori dei singoli raggi non si poteva conoscere a priori il valore di $\eta_{eff}$, pertanto ci si è dovuti ricondurre all'utilizzo di $\eta$, ma, come visto nella formula (\ref{raggio}), anche dei valori di $b$ e di $p$.\\
+
+È stato anche interessante calcolare la variazione percentule di $\eta_{eff}$ rispetto a $\eta$, per comprendere quanto fosse il miglioramento grazie ad un valore raffinato per mezzo della formuala:
+\begin{equation}
+	\frac{\Delta \eta}{\eta}=\frac{(\eta-\eta_{eff})}{\eta}
+\end{equation}
+Da questo valore ne è stata semplicemente ricavata la percentuale moltiplicando per un fattore $100$.\\
+
+I valori dei moduli dei campi elettrici sono stati calcolati con la relazione:
+\begin{equation}
+	E=\frac{\Delta V}{d}
+\end{equation}
+Dove $\Delta V$ è la differenza di potenziale tra i due elettrodi e $d$ è la distanza tra essi.
+
+Siccome ambedue i valori presentano un'incertezza, per calcolare quella del campo è bastato derivare lungo entrambe le variabili e sommarle in quadratura. Le due derivate sono state ricondotte a formule in cui compariva anche il valore $E$.
+\begin{equation}
+	\sigma_{E}=E\cdot\sqrt{\left(\frac{\sigma_{\Delta V}}{\Delta V}\right)^2+\left(-\frac{\sigma_d}{d}\right)^2}
+\end{equation}
+Dove $\sigma_{\Delta V}$ è l'incertezza sulla differenza di potenziale e $\sigma_d$ è l'incertezza sulla distanza tra i due elettrodi.\\
+
+La distanza tra i due elettrodi $d$ è stata semplicemente ottenuta facendo la media tra i valori misurati con un calibro del separatore dei due elettrodi. Siccome tutte le misure avevano la stessa incertezza, è stato semplice calcolarne la media e come errore è stato preso quello del calibro ($\pm 0.01\ mm$).\\
+
+La quantità di cariche $Q$ presenti su ogni goccia è stata ricavata con la seguente formula che differisce a seconda che la goccia stesse scendendo o risalendo il reticolo.
+\begin{equation}
+	Q_{\downarrow}=-\frac{4}{3}\pi r^3(\rho_o-\rho_a)\frac{g}{E}\left(1-\frac{v}{v_o}\right)
+\end{equation}
+\begin{equation}
+	Q_{\uparrow}=-\frac{4}{3}\pi r^3(\rho_o-\rho_a)\frac{g}{E}\left(1+\frac{|v|}{v_o}\right)
+\end{equation}
+Dove tutte le costanti sono come sopra, ma si sta considerando il valore medio $r$ per i raggi, il valore medio $v_o$ per le velocità, mentre i valori $v$ sono le velocità calcolate sempre con l'equazione (\ref{velocita_limite}), ma i tempi si riferiscono a quanto tempo la carica ha impiegato a discendere o risalire il reticolo.
+
+L'incertezza per le varie $Q$ è stata calcolata nel seguente modo\footnote{Sono state direttamente ricondotte le derivate alla formula che includesse la $Q$}:
+\begin{equation}
+	\sigma_{Q_{\downarrow}}=\sqrt{\left(\frac{3Q_{\downarrow}}{r}\sigma_r\right)^2+\left(-\frac{Q_{\downarrow}}{E}\sigma_E\right)^2+\left(\frac{Q_{\downarrow}}{1-v/v_o}\left(-\frac{1}{v_o}\right)\sigma_v\right)^2+\left(\frac{Q_{\downarrow}}{1-v/v_o}\left(\frac{v}{v_o^2}\right)\sigma_{v_o}\right)^2}
+\end{equation}
+\begin{equation}
+	\sigma_{Q_{\uparrow}}=\sqrt{\left(\frac{3Q_{\uparrow}}{r}\sigma_r\right)^2+\left(-\frac{Q_{\uparrow}}{E}\sigma_E\right)^2+\left(\frac{Q_{\uparrow}}{1+|v|/v_o}\left(+\frac{1}{v_o}\cdot sgn(v)\right)\sigma_v\right)^2+\left(\frac{Q_{\uparrow}}{1+|v|/v_o}\left(-\frac{|v|}{v_o^2}\right)\sigma_{v_o}\right)^2}
+\end{equation}
+Dove le varie $\sigma$ sono le relative incertezze alle variabili a pedice.\\
+
+Per calcolare il valore effettivo della carica dell'elettrone si ha fatto uso di un programma scritto nel linguaggio $C++$ e della libreria ROOT sviluppata dal CERN per rappresentare il grafico. Si può trovare l'intero codice al 
+
+\section{Confronto con valore atteso}
+
+\section{Conclusione}
+
+\section{Grafici, tabelle e immagini}
+
+\end{document}
