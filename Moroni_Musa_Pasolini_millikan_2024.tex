@@ -970,9 +970,11 @@ La distanza tra i due elettrodi $d$ è stata semplicemente ottenuta facendo la m
 La quantità di cariche $Q$ presenti su ogni goccia è stata ricavata con la seguente formula che differisce a seconda che la goccia stesse scendendo o risalendo il reticolo.
 \begin{equation}
 	Q_{\downarrow}=-\frac{4}{3}\pi r^3(\rho_o-\rho_a)\frac{g}{E}\left(1-\frac{v}{v_o}\right)
+	\label{qsu}
 \end{equation}
 \begin{equation}
 	Q_{\uparrow}=-\frac{4}{3}\pi r^3(\rho_o-\rho_a)\frac{g}{E}\left(1+\frac{|v|}{v_o}\right)
+	\label{qgiu}
 \end{equation}
 Dove tutte le costanti sono come sopra, ma si sta considerando il valore medio $r$ per i raggi, il valore medio $v_o$ per le velocità, mentre i valori $v$ sono le velocità calcolate sempre con l'equazione (\ref{velocita_limite}), ma i tempi si riferiscono a quanto tempo la carica ha impiegato a discendere o risalire il reticolo.
 
@@ -985,7 +987,37 @@ L'incertezza per le varie $Q$ è stata calcolata nel seguente modo\footnote{Sono
 \end{equation}
 Dove le varie $\sigma$ sono le relative incertezze alle variabili a pedice.\\
 
-Per calcolare il valore effettivo della carica dell'elettrone si ha fatto uso di un programma scritto nel linguaggio $C++$ e della libreria ROOT sviluppata dal CERN per rappresentare il grafico. Si può trovare l'intero codice al seguente \href{https://github.com/definetly-not-carl/millikan/blob/master/millikan.cpp}{indirizzo}.
+Per calcolare il valore effettivo della carica dell'elettrone si ha fatto uso di un programma scritto nel linguaggio C++ e della libreria ROOT sviluppata dal CERN per rappresentare il grafico. Si può trovare l'intero codice al seguente \href{https://github.com/definetly-not-carl/millikan/blob/master/millikan.cpp}{indirizzo}.
+
+Per ricavare il grafico, si è dovuto calcolare lo scarto quadratico medio per ogni carica di prova, che sono state prese nell'invervallo $[1.4\cdot10^{-19};1.8\cdot 10^{-19}]$, ma, prima di calcolarlo, si è dovuto calcolare il rapporto intero tra la carica misurata e la carica di prova in esame secondo la relazione:
+\begin{equation}
+	k_i(q_\alpha)=\left[\frac{Q_i}{q_{\alpha}+0.5}\right]
+\end{equation}
+Dove l'operatore $[\cdot]$ restituisce la parte intera del valore, $Q_i$ sono le cariche calcolate con le relazioni (\ref{qsu}) e (\ref{qgiu}), mentre le $q_{\alpha}$ sono le cariche di prova.\\
+
+Successivamente è stato calcolato lo scarto quadratico medio $S(q)$ per ogni carica di prova con la formula:
+\begin{equation}
+	S(q)=\sum_{i=1}^N\left(\frac{Q_i}{k_i(q)}-q\right)^2
+	\label{scartoq}
+\end{equation}
+Dove $q$ è il valore della carica di prova, $Q_i$ rappresenta tutte le cariche ottenute dall'esperienza e $k_i$ il valore calcolato su una determinata $q$ della relativa $Q_i$.\\
+
+Per ottenere il valore della carica dell'elettrone con questo esperimento, si è dovuta derivare rispetto a q la relazione (\ref{scartoq}), ottenendo così la seguente:
+\begin{equation}
+	q_e=\frac 1N\sum^N_{i=1}\frac{Q_i}{k_i}
+\end{equation}
+Dove le $k_i$ sono state calcolate sempre allo stesso modo, ma il valore della carica di prova è stato ottenuto graficamente cercando il minimo tra tutte le $S(q)$.\\
+
+Il valore dell'incertezza statistica sulla carica dell'elettrone è stato calcolato nel seguente modo:
+\begin{equation}
+	\sigma_{q_e}=\sqrt{\frac{S(q_e)}{N(N-1)}}
+	\label{sigmaqe}
+\end{equation}\\
+
+Vi è tuttavia anche un errore sistematico che è stato ottenuto prendendo il $2\%$ della carica. Questo valore e quello ottenuto dalla formula (\ref{sigmaqe}) sono stati combinati in quadratura secondo la formula:
+\begin{equation}
+	\sigma_{tot_q}=\sqrt{\sigma_{2\%}^2+\sigma_{q_e}^2}
+\end{equation}
 
 \section{Confronto con valore atteso}
 
