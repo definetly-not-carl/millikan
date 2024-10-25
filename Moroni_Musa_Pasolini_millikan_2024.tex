@@ -7,8 +7,14 @@
 \usepackage{multicol}
 \usepackage{float}
 \usepackage{multicol}
+\usepackage{hyperref}
 \setlength{\columnsep}{0.75cm}
 \RequirePackage[a4paper,margin=1.5cm]{geometry}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=violet,
+}
 
 
 \title{{\large Università degli Studi di Milano}\\{\large Corso di Laurea Triennale in Fisica}\\{\LARGE Esperienza di Millikan}\\{\normalsize Misura della carica dell'elettrone}}
@@ -979,7 +985,7 @@ L'incertezza per le varie $Q$ è stata calcolata nel seguente modo\footnote{Sono
 \end{equation}
 Dove le varie $\sigma$ sono le relative incertezze alle variabili a pedice.\\
 
-Per calcolare il valore effettivo della carica dell'elettrone si ha fatto uso di un programma scritto nel linguaggio $C++$ e della libreria ROOT sviluppata dal CERN per rappresentare il grafico. Si può trovare l'intero codice al 
+Per calcolare il valore effettivo della carica dell'elettrone si ha fatto uso di un programma scritto nel linguaggio $C++$ e della libreria ROOT sviluppata dal CERN per rappresentare il grafico. Si può trovare l'intero codice al seguente \href{https://github.com/definetly-not-carl/millikan/blob/master/millikan.cpp}{indirizzo}.
 
 \section{Confronto con valore atteso}
 

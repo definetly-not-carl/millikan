@@ -5,4 +5,5 @@ data_millikan.dat
 millikan
 *.aux
 *.log
+*.out
 Millikan_2024-2025.pdf
