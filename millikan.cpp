@@ -18,7 +18,7 @@ using namespace std;
 #define MAX 1.800e-19
 #define INCR 0.001e-19/4
 
-#define ELECTRON_CHARGE 1.602e-19
+#define ELECTRON_CHARGE 1.602176634e-19
 
 int main(int argc, char** argv){
 	if (argc<2) {
